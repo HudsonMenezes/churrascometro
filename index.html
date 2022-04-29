@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Churrascômetro</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Churrascômetro</h1>
+        <input type="number" id="adultos" name="adultos" placeholder="Adultos">
+        <input type="number" id="criancas" name="criancas" placeholder="Crianças">
+        <input type="number" id="duracao" name="duracao" placeholder="Duração(hrs)">
+        <button onclick="calcular()">Calcular</button>
+        <div id="resultado">
+
+        </div>
+        
+    </div>
+    <div class="container">
+      <h2>Como foi calculado:</h2>
+    <ul><li><span>Carne:</span> 400gr de carne por pessoa. Se a duração for mais de 6 horas, 650gr</li>
+      <li><span>Cerveja:</span> 1.2 litros por pessoa. Se a duração for mais de 6 horas, 2 litros. (Cada lata = 355ml).</li>
+      <li><span>Refrigerante/Água:</span> 1000ml por pessoa + 6 horas 1500ml</li>
+    
+    <li><span>Obs:</span> Crianças valem por 0,5</li></ul>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
